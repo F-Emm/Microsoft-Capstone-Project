@@ -85,4 +85,4 @@ def recommendation():
 
   return render_template('/startup2-1.0.0/quote.html', output=movie(key))
   # return redirect(output='Prediction is "{} Days" ({:.1f}%)'.format(DAYS[class_id], 100 * probability))
-# app.run()
+app.run()
