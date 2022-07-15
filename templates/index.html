@@ -1,0 +1,55 @@
+<html >
+<head>
+  <title>Predict the Weight</title>  
+</head>
+
+<body>
+ <div>
+	<h1>Predict Weight</h1>
+
+    
+    <form action="{{ url_for('getprediction')}}"method="post">
+    	<input type="text" name="Packed" placeholder="Packed" required="required" />
+      <input type="text" name="Tonnage" placeholder="Tonnage" required="required" />
+      <input type="text" name="Receiver" placeholder="Receiver" required="required" />
+      <input type="text" name="Type" placeholder="Type" required="required" />
+      <input type="text" name="Berth" placeholder="Berth" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">getprediction</button>
+    </form>
+   
+
+    <!--
+    <form action="{{ url_for('getprediction')}}"method="post">
+    	<input type="text" name="crew_Motivation" placeholder="Crew_Motivation" required="required" />
+      <input type="text" name="vessel_Condtion" placeholder="Vessel_Condtion" required="required" />
+      <input type="text" name="consignee_throughput" placeholder="Consignee_throughput" required="required" />
+      <input type="text" name="weather" placeholder="Weather" required="required" />
+      <input type="text" name="Tonnage" placeholder="Tonnage" required="required" />
+      <input type="text" name="Packed" placeholder="Packed" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">getprediction</button>
+    </form>
+    -->
+
+    <!-- 'crew_Motivation', 'vessel_Condtion', 'consignee_throughput', 'weather', 'Tonnage', 'Packed' -->
+
+    <!---->
+    <!-- <form action="{{ url_for('getprediction')}}"method="post">
+    	<input type="text" name="crew_Motivation" placeholder="Crew_Motivation"/>
+      <input type="text" name="vessel_Condtion" placeholder="Vessel_Condtion"/>
+      <input type="text" name="consignee_throughput" placeholder="Consignee_throughput"/>
+      <input type="text" name="weather" placeholder="Weather"/>
+      <input type="text" name="Tonnage" placeholder="Tonnage"/>
+      <input type="text" name="Packed" placeholder="Packed" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">getprediction</button>
+    </form> -->
+    <!---->
+
+   <br>
+   <br>
+   {{ output }}
+
+ </div>
+
+
+</body>
+</html>
