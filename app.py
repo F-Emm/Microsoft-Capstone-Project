@@ -18,6 +18,7 @@ import pickle
 import joblib
 #from flask_ngrok import run_with_ngrok
 from flask import Flask, request, render_template
+from sklearn.neighbors import NearestNeighbors
 
 app = Flask(__name__)
 
